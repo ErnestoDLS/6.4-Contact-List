@@ -16,46 +16,7 @@ export default React.createClass({
   }
 });
 
-var ContactListItems = React.createClass({
-  render(){
-    return (
-      <li className="ViewAll">
-        <a href={"#contacts/" + this.props.contact.id}>
-          <img className="Picture" src={"image/to/path" + this.props.contact.firstName + "_" + this.props.contact.lastName + ".jpg"}/>
-          <p>{this.props.contact.title}</p>
-        </a>
-      </li>
-    );
-  }
-});
 
-var ContactList = React.createClass({
-  render() {
-    var items = this.props.contacts.map(function(contact){
-      return (
-        <ContactsListItems key={contact.id} contact={contact}/>
-      );
-    });
-    return (
-      <ul className="contact-view">
-        {items}
-      </ul>
-    )
-  }
-});
-
-var HomePage = React.createClass({
-  render() {
-    return(
-      <div className={"page" + this.props.position}>
-        <Header text="Contact List" back="false"/>
-          <div className="content">
-            <ContactList contacts={this.props.contacts}/>
-          </div>
-      </div>
-    )
-  }
-});
 
 var ContactPage = React.createClass({
   getInitialState() {
