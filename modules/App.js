@@ -1,43 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router'
+import {Link} from 'react-router'
+import Preview from './Preview'
 
 export default React.createClass({
   render() {
     return (
-    <div>
-      <h1 className="heading">Hello!</h1>
-      <ul role="nav">
-        <li><Link to="/contacts">Contacts</Link></li>
-
-      </ul>
-      {this.props.children}
-    </div>
+      <main>
+        <h1 className="list__heading">Contacts</h1>
+          <div>
+            <Preview/>
+          </div>
+        </main>
     )
   }
-});
-
-
-
-var ContactPage = React.createClass({
-  getInitialState() {
-    return {contact: {}};
-  },
-  componentDidMount() {
-    this.props.service.findBYID(this.props.contactId).done(function(result){this.setState({contact:result});
-
-  }.bind(this));
-},
-render(){
-  return(
-    <div className={"page" + this.props.position}>
-      <ul className="table-view>">
-        <li className="table-view-cell">
-          <img className="Picture" src={"pics/" + this.state.contact.firstName + "_" + this.state.contact.lastName + "jpg"}/>
-          <h1>{this.state.contact.firstName} {this.state.conact.lastName}</h1>
-          <p>{this.state.contact.number}</p>
-        </li>
-      </ul>
-    </div>
-  )
-}
 })
