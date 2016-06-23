@@ -65,7 +65,7 @@ html {
   font-size: 62.5%; }
 
 .list__heading {
-  background-color: #2ecd72;
+  background-color: #32b4c8;
   color: white;
   padding: 1rem; }
 
@@ -73,7 +73,7 @@ html {
   padding-left: 0; }
 
 .contact__li {
-  border-bottom: 1px solid rgba(127, 140, 141, 0.5);
+  border-bottom: 1px solid rgba(130, 200, 141, 0.5);
   list-style: none;
   text-decoration: none; }
 
@@ -87,7 +87,7 @@ html {
   vertical-align: top; }
 
 .detail__head {
-  background-color: #2ecc71;
+  background-color: #32b4c8;
   padding: 1rem;
   width: 100%;
   text-decoration: none; }
@@ -100,14 +100,12 @@ html {
   margin-right: auto;
   margin-bottom: 2rem; }
 
-.detail__items {
-  padding: 0; }
-
-.detail_-li {
+.detail__li {
   font-size: 1.5rem;
   line-height: 2;
   list-style: none;
-  border-bottom: 1px solid rgba(126, 140, 141, 0.5); }
+  border-bottom: 1px solid rgba(130, 140, 141, 0.5);
+  list-style: none; }
 
 .fa {
   margin: 1rem;
