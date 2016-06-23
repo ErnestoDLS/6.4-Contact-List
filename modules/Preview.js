@@ -38,6 +38,7 @@ export default React.createClass({
     return(
       <ul className="contacts__list">
         {this.props.contacts.map(function(contact, i){
+          console.log(contact);
           return <li key={i} className="contact__li">
             <Link to={`/Detail/${contact.contact_image}/${contact.contact_name}/${contact.contact_email}/${contact.contact_phone}/${contact.contact_location}`}>
               <img className="contact__image--preview" src={`../images/${contact.contact_image}`}/>
