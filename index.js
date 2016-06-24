@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import App from './modules/App'
-import PreviewList from './modules/Preview'
+import Preview from './modules/Preview'
 import Detail from './modules/Detail'
 
 
