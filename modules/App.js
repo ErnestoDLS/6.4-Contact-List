@@ -8,9 +8,10 @@ export default React.createClass({
         <h1>Trello</h1>
           <article role="nav">
             <h2 className="board">My Boards</h2>
-              <h3className="chat__name">JS Chat</h3>
+              <Link to="/about">JS Chat</Link>
           </article>
 
+          {this.props.children}
 
       </div>
     )
