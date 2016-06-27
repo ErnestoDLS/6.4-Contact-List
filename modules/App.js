@@ -1,16 +1,18 @@
 import React from 'react'
-import {Link} from 'react-router'
-import Preview from './Preview'
+import { Link } from 'react-router'
 
 export default React.createClass({
   render() {
     return (
-      <main>
-        <h1 className="board__title">My Boards</h1>
-          <div>
-            <h2 clasName="chat__name">JS Chat</h2>
-          </div>
-        </main>
+      <div>
+        <h1>Trello</h1>
+          <article role="nav">
+            <h2 className="board">My Boards</h2>
+              <h3className="chat__name">JS Chat</h3>
+          </article>
+
+
+      </div>
     )
   }
 })
