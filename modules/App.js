@@ -6,9 +6,9 @@ export default React.createClass({
   render() {
     return (
       <main>
-        <h1 className="list__heading">Contacts</h1>
+        <h1 className="board__title">My Boards</h1>
           <div>
-            <Preview/>
+            <h2 clasName="chat__name">JS Chat</h2>
           </div>
         </main>
     )
